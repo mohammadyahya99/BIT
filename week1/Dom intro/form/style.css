@@ -1,0 +1,60 @@
+.body {
+  background-color: silver;
+}
+.container {
+  width: 50%;
+  height: 300px;
+  font-weight: bold;
+  margin: 10px;
+  background-color: #126e12;
+  border: 5px solid rgba(16, 21, 24, 0.356);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+}
+.parent {
+  display: grid;
+  margin: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.name {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.pass {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.birthday {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.phone {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.salary {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.submit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.button {
+  font-weight: bold;
+  background-color: red;
+  border: 2px solid red;
+  width: 150px;
+  margin: 10px;
+}
+.message {
+  color: red;
+  margin: 15px;
+  display: grid;
+  justify-content: left;
+}
