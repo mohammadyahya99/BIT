@@ -1,0 +1,52 @@
+#chat {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "m b" "m c";
+
+  background-color: rgb(245, 245, 245);
+}
+#chatbox {
+  display: grid;
+  grid-area: b;
+}
+#names {
+  display: grid;
+  grid-area: m;
+  background: rgb(146, 49, 175);
+}
+
+#input {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-area: c;
+  text-align: center;
+  align-self: flex-end;
+  align-content: center;
+}
+.button {
+  background: rgb(146, 49, 175);
+}
+
+.right {
+  display: grid;
+  justify-content: end;
+  grid-auto-flow: column;
+}
+.left {
+  display: grid;
+  justify-content: start;
+  grid-auto-flow: column;
+}
+.text {
+  background-color: rgb(34, 153, 60);
+}
+.time {
+  background-color: rgb(34, 153, 60);
+}
+
+p {
+  background-color: rgb(152, 94, 206);
+}
