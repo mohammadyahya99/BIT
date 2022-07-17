@@ -1,3 +1,23 @@
+class Office {
+  constructor() {
+    this.documents = [];
+    this.managers = [];
+    this.cleaners = [];
+  }
+
+  hireCleaner(name) {
+    this.cleaners.push(new Cleaner(name));
+  }
+
+  hireManager(name) {
+    this.managers.push(new Manager(name));
+  }
+
+  startWorkDay() {
+    this.managers.forEach((manager) => manager.askEmployeesToWork(this));
+    this.cleaners.forEach((cleaner) => cleaner.clean());
+  }
+}
 class Document {
   constructor(EmployeeName) {
     this.EmployeeName = EmployeeName;
@@ -38,26 +58,5 @@ class Cleaner {
 
   clean() {
     console.log("Clean");
-  }
-}
-
-class Office {
-  constructor() {
-    this.documents = [];
-    this.managers = [];
-    this.cleaners = [];
-  }
-
-  hireCleaner(name) {
-    this.cleaners.push(new Cleaner(name));
-  }
-
-  hireManager(name) {
-    this.managers.push(new Manager(name));
-  }
-
-  startWorkDay() {
-    this.managers.forEach((manager) => manager.askEmployeesToWork(this));
-    this.cleaners.forEach((cleaner) => cleaner.clean());
   }
 }
