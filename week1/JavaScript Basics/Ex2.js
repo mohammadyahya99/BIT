@@ -1,16 +1,14 @@
-const names = ["Ashley", "Donovan", "Lucas"];
-const ages = [23, 47, 18];
-let people = [];
+function firstRepeating(str) {
+  let h = new Set();
 
-for (let index in names) {
-  let op = {};
-  op["name"] = names[index];
-  op["age"] = ages[index];
+  for (let i = 0; i <= str.length - 1; i++) {
+    let c = str[i];
 
-  people.push(op);
+    if (h.has(c)) return c;
+    else h.add(c);
+  }
+
+  return "\0 ";
 }
-console.log(people);
-
-for (let all of people) {
-  console.log(all.name + " is " + all.age);
-}
+const x = "mmdss";
+firstRepeating(x);
